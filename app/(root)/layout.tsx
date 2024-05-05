@@ -3,6 +3,7 @@ import React from 'react'
 
 import Sidebar from '@/components/shared/Sidebar'
 import MobileNav from '@/components/shared/MobileNav'
+import { Toaster } from '@/components/ui/toaster'
 
 type Props = {
     children: React.ReactNode
@@ -19,6 +20,7 @@ const RootLayout = ({ children }: Props) => {
                 {children}
             </div>
         </div>
+        <Toaster />
     </main>
   )
 }
